@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: RCE
         run: |
-          whoami > /tmp/pwened.txt
+          whoami > pwened.txt
