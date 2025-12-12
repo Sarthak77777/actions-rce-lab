@@ -1,0 +1,9 @@
+name: Lab Runner Test
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Runner is Live !!!"
