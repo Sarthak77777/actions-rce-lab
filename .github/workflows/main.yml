@@ -10,16 +10,7 @@ jobs:
         run: |
           whoami > pwened.txt
 
-      - name: Commit and Push pwened.txt
-        uses: EndBug/add-and-commit@v7
-        with:
-          author_name: 'GitHub Actions'
-          author_email: 'actions@github.com'
-          message: 'Add Extracted Results'
-          add: 'pwened.txt'
-          cwd: ./
-
-      - name: Push changes
+      - name: Commit & Push changes
         run: |
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
